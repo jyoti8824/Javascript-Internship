@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottles of Beer Song</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1{
+            color: #333;
+        }
+        p{
+            color: #666;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bottles Of Beer</h1>
+    <p id="songLyr"></p>
+    <script>
+        let songLyr = "";
+        // let bottles = 99;
+        // while(bottles > 0){
+        //     songLyr += `${bottles} bottles of beer on the wall, ${bottles} bottles of beer.<br> Take one down and pass it around, ${bottles-1} bottles of beer on the wall.<br><br>`;
+        //     bottles--;
+        //     document.getElementById("songLyr").innerHTML = songLyr;
+        // }
+        for(var i = 99; i>0; i--){
+            songLyr += `${i} bottles of beer on the wall, ${i} bottles of beer.<br> Take one down and pass it around, ${i-1} bottles of beer on the wall.<br><br>`;
+            document.getElementById("songLyr").innerHTML = songLyr;
+        }
+    </script>
+</body>
+</html>
